@@ -5,8 +5,7 @@
 
     .content-section .section-form .date-time {
         display: block;
-        width: 100%;
-        max-width: 300px;
+        width: 300px;
         font-size: 16px;
         padding: 10px;
     }
