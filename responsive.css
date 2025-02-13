@@ -2,4 +2,8 @@
     #slider .text-heading .text-notification {
         display: none;
     }
+
+    .content-section .section-form .date-time {
+        width: 100%;
+    }
 }
