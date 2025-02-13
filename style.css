@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inconsolata", serif;
+    background-color: hsl(43, 41%, 97%);
+
+}
+
+#header {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#header .nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#slider {
+    position: relative;
+    min-height: 75vh;
+    background-image: url(./images/coffeehouse.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: grayscale(0.5);
+}
+
+
+
+
+#slider .text-heading .text-notification {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px 16px;
+    color: #fff;
+
+}
+
+#slider .text-heading .text-notification span {
+    padding: 0 8px;
+    background: #000;
+}
+
+#slider .text-heading .name-store {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+}
+
+
+
+#slider .text-heading .text-date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+#slider .text-heading .text-date span {
+    padding: 0 8px;
+
+}
+
+#content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+#content .section-heading {
+    text-align: center;
+    margin: 10px 0;
+    padding: 64px 0;
+
+}
+
+
+#content .section-heading span {
+    background-color: #000;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 0 8px;
+}
+
+#content .section-description {
+    margin: 18px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-section .section-text {
+    background-color: rgb(241, 241, 241);
+    border-left: rgb(204, 204, 204);
+    margin: 16px 0;
+    padding: 0 16px;
+    display: inline-block;
+    border-left-width: 6px;
+    border-left-style: solid;
+
+}
+
+.content-section .section-text p {
+    margin: 18px 0;
+    line-height: 27px;
+}
+
+.content-section .section-image img {
+    width: 100%;
+    filter: grayscale(0.8);
+    margin-top: 16px;
+}
+
+.content-section .section-about p {
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+.content-section .food-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 8px 16px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.content-section .food-option .active {
+    background-color: rgb(97, 97, 97);
+    color: #fff !important;
+}
+
+.content-section .food-option .option-eat {
+
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.content-section .food-option .option-drink {
+    color: #000;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.content-section .food-eat {
+    display: none;
+}
+
+.content-section .section-food {
+    padding: 48px 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.content-section .section-food h5 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content-section .section-food p {
+    margin: 18px 0;
+    font-size: 18px;
+    color: #757575;
+}
+
+.content-section .section-image img {
+    width: 100%;
+    filter: grayscale(0.8);
+    margin-top: 16px;
+}
+
+.content-section .section-form input {
+    display: block;
+    padding: 16px 8px;
+    width: 100%;
+    margin: 18px 0;
+    border: 1px solid #ccc;
+}
+
+.content-section .section-form button {
+    padding: 8px 16px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Inconsolata", serif;
+    text-transform: uppercase;
+}
+
+#footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 48px 0;
+}
+
+#footer p {
+    margin: 18px 0;
+}
